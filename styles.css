@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* Global Classes  */
+li,
+button {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* Header Section */
+.header.custom {
+    padding: 25px 50px;
+}
+
+.header .left-content a { 
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header .left-content a i {
+    color: #000;
+    font-size: 48px;
+}
+
+.header .left-content a h2 {
+    color: #000;
+    transform: translateY(12%);
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* Login & Register Section  */
+.hero {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .wrapper {
+    width: 380px;
+}
+
+.hero .wrapper form {
+    padding: 10px;
+}
+
+.hero .wrapper form  header {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.hero .wrapper form .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .wrapper form .social .content-row {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.hero .wrapper form .social .content-row:hover {
+    background-color: #AAAAAA;
+}
+
+.hero .wrapper form .social .content-row .icon {
+    border-radius: 100%;
+    border: 1px solid #000;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.hero .wrapper form .social .content-row .icon i {
+    font-size: 22px;
+}
+
+.hero .wrapper form .social .content-row h2 {
+    font-weight: 400;
+    font-size: 18px;
+    transform: translateY(8%);
+    margin-left: 10px;
+}
+
+.hero .wrapper form .standard {
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.hero .wrapper form .standard .field {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .wrapper form .input {
+    margin: 5px 0;
+}
+
+.hero .wrapper form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 20px 20px 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+}
+
+.hero .wrapper form .action {
+    display: flex;
+    justify-content: right;
+    margin: 10px 0;
+}
+
+.hero .wrapper form .action button {
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+}
+
+.hero .wrapper form .action button:hover {
+    text-decoration: underline;
+}
+
+.hero .wrapper form .action button a {
+    text-decoration: none;
+    color: #000;
+}
