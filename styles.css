@@ -17,35 +17,164 @@ body {
 /* Global Classes  */
 li,
 button {
-    font-size: 12px;
-    font-weight: 500;
-    color: #ccc;
+    color: #000;
     cursor: pointer;
 }
 
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 /* Header Section */
 .header.custom {
+    display: flex;
+    justify-content: left;
     padding: 25px 50px;
+    border-bottom: none;
 }
 
-.header .left-content a { 
+.header.custom .left-content a { 
     text-decoration: none;
     display: flex;
     flex-direction: row;
 }
 
-.header .left-content a i {
+.header.custom .left-content a i {
     color: #000;
     font-size: 48px;
 }
 
-.header .left-content a h2 {
+.header.custom .left-content a h2 {
     color: #000;
     transform: translateY(12%);
     margin-left: 10px;
     font-weight: 500;
     font-size: 24px;
 }
+
+.header {
+    padding: 12px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.header .left-content a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+.header nav {
+
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header nav ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.header nav ul li h4 {
+    font-weight: 400;
+}
+
+.header nav ul li i {
+    font-size: 12px;
+    margin-left: 2px;
+    transform: translateY(28%);
+}
+
+.header .right-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .right-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .right-content i {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size:  24px;
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+.header .right-content i:hover {
+    color: #000;
+}
+
+.header .right-content .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.header .right-content .search-container form {
+    margin: 4px 20px;
+    width: 710px;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+}
+  
+.header .right-content .search-container form input {
+    width: 90%;
+    border: none;
+    outline: none;
+    color: #000;
+    margin-left: 10px;
+    font-size: 18px;
+}
+  
+.header .right-content .search-container form input::placeholder {
+    color: #000;
+}
+  
+.header .right-content .search-container form button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+  
+.header .right-content .search-container form button .fa-magnifying-glass {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-right   : 10px;
+    transition: all 0.3s ease 0s;
+}
+  
+.header .right-content .search-container form button i:hover {
+    transform: scale(1.1);
+}
+
 
 /* Login & Register Section  */
 .hero {
@@ -165,4 +294,358 @@ button {
 .hero .wrapper form .action button a {
     text-decoration: none;
     color: #000;
+}
+
+/* Intro Banner Section  */
+.home-intro-banner {
+    position: relative;
+    padding: 20px 0;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+.home-intro-banner header {
+    font-size: 24px;
+}
+
+.home-intro-banner .carousel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    transform: translateY(60%);
+    margin: 10px 0;
+}
+
+.home-intro-banner .carousel .wrapper {
+    margin-right: 40px;
+}
+
+.home-intro-banner .carousel .wrapper .content {
+    height: 140px;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.home-intro-banner .carousel .wrapper h4 {
+    font-weight: 400;
+}
+
+.home-intro-banner .carousel .wrapper .content:hover {
+    background-color: #d9d9d9;
+}
+
+/* Top Rated & Latest Artworks Section */
+.design-one {
+    margin: 150px 0 0 0;
+    padding: 0 16%;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-one .details {
+    margin: 0 10px;
+}
+
+.design-one .details header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.design-one .details p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #737373;
+    margin-bottom: 10px;
+}
+
+.design-one .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.design-one .row .content-col {
+    position: relative;
+    flex: 33%;
+    margin: 0 10px;
+    height: 350px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-one .row .content-col .img {
+    width: 100%;
+    height: 77%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #D9D9D9;
+    border-bottom: 1px solid #000;
+}
+
+.design-one .row .content-col .actions {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.design-one .row .content-col .actions .btn-center {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.design-one .row .content-col .actions .btn-center button {
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+}
+
+.design-one .row .content-col .actions .btn-center button i {
+    font-size: 32px;
+}
+
+.design-one .row .content-col .user-details {
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.design-one .row .content-col .user-details .user-img {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #000;
+}
+
+.design-one .row .content-col .user-details .name-rating {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-one .row .content-col .user-details .name-rating header {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.design-one .row .content-col .user-details .name-rating .rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.design-one .row .content-col .user-details .name-rating .rating h4 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.design-one .row .content-col .user-details .name-rating .stars {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(7%);
+}
+
+.design-one .row .content-col .user-details .name-rating .stars i {
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+.design-one .row .content-col .user-details .price {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+}
+
+.design-one .row .content-col .user-details .price h4 {
+    font-weight: 400;
+}
+
+
+
+/* Top Artists Section  */
+.top-paid {
+    margin: 30px 0;
+    padding: 0 16%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-paid .details {
+    margin: 0 10px;
+}
+
+.top-paid .details header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.top-paid .details p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #737373;
+    margin-bottom: 10px;
+}
+
+.top-paid .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-paid .row .content-col {
+    position: relative;
+    flex: 33%;
+    margin: 0 10px;
+    height: 350px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-paid .row .content-col .price {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 15px;
+}
+
+.top-paid .row .content-col .price h4{
+    font-weight: 400;
+}
+
+.top-paid .row .content-col .user-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-paid .row .content-col .user-details .img {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #000
+}
+
+.top-paid .row .content-col .user-details header {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.top-paid .row .content-col .user-details p {
+    font-weight: 400;
+    margin: -5px 0 0px 0;
+}
+
+.top-paid .row .content-col .user-details .rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-paid .row .content-col .user-details .rating i {
+    font-size: 18px;
+}
+
+.top-paid .row .content-col .user-details .rating h4 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.top-paid .row .content-col .user-details button {
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 9px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+}
+
+.top-paid .row .content-col .user-details button:hover {
+    background-color: #d9d9d9;
+}
+
+.top-paid .row .content-col .user-details button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Footer Section  */
+.footer {
+    margin: 30px 0 0 0;
+    padding: 0 17%;
+    width: 100%;
+    background-color: #d9d9d9;
+    border: 2px solid #000;
+    border-bottom: none;
+}
+
+.footer .row {
+    padding: 40px 0;
+    display: flex;
+}
+
+.footer .row .content-col {
+    flex: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer .row .content-col a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer .row .content-col .logo {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer .row .content-col header {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer .row .content-col ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    padding: 20px 17%;
+    border: 2px solid #000;
+    background-color: #d9d9d9;
+}
+
+.footer-bottom .left-content {
+    display: flex;
+}
+
+.footer-bottom .left-content p {
+    font-weight: 500;
 }
