@@ -74,10 +74,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #000;
 }
 
-.header nav {
-
-}
-
 .header nav ul {
     display: flex;
     flex-direction: row;
@@ -175,6 +171,31 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transform: scale(1.1);
 }
 
+/* Sub Header Section  */
+.sub-header {
+    padding: 0 17%;
+}
+
+.sub-header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-header nav ul li {
+    list-style: none;
+    margin: 5px 56px;
+}
+
+.sub-header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+
+.sub-header nav ul li a:hover {
+    text-decoration: underline;
+}
 
 /* Login & Register Section  */
 .hero {
