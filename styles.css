@@ -173,7 +173,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* Sub Header Section  */
 .sub-header {
-    padding: 0 17%;
+    padding: 0 16.6%;
 }
 
 .sub-header nav ul {
@@ -612,17 +612,40 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* Footer Section  */
 .footer {
-    margin: 30px 0 0 0;
-    padding: 0 17%;
+    position: relative;
+    margin: 50px 0 0 0;
     width: 100%;
     background-color: #d9d9d9;
     border: 2px solid #000;
     border-bottom: none;
 }
 
+.footer .footer-top {
+    padding: 0 16.6%;
+}
+
+.footer .top {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    cursor: pointer;
+    right: 30px;
+    top: -55px;
+}
+
+.footer .top i {
+    color: #fff;
+}
+
 .footer .row {
     padding: 40px 0;
     display: flex;
+    justify-content: center;
 }
 
 .footer .row .content-col {
@@ -658,9 +681,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .footer-bottom {
     display: flex;
     width: 100%;
-    padding: 20px 17%;
+    padding: 20px 16.6%;
     border: 2px solid #000;
-    background-color: #d9d9d9;
+    background-color: #000;
 }
 
 .footer-bottom .left-content {
@@ -668,5 +691,275 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .footer-bottom .left-content p {
+    font-weight: 500;
+    color: #fff;
+}
+
+/* About Intro Section  */
+.about-intro {
+    position: relative;
+    margin: 20px 0;
+    padding: 2% 16.6%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #000;
+}
+
+.about-intro .left-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-intro .left-content header {
+    font-size: 58px;
+    font-weight: 500;
+}
+
+.about-intro .left-content p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.about-intro .left-content h4 {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about-intro .actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-intro .actions button {
+    margin-right: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 12px 48px;
+    border-radius: 25px;
+    transition: all 0.3s ease 0s;
+}
+
+.about-intro .actions button:hover {
+    background-color: #000;
+}
+
+.about-intro .actions button:hover a {
+    color: #fff;
+}
+
+.about-intro .actions button.signin {
+    background-color: #000;
+    padding: 12px 60px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.about-intro .actions button.signin:hover {
+    background-color: #fff;
+}
+
+.about-intro .actions button.signin:hover a {
+    color: #000;
+}
+
+.about-intro .actions button.signin a {
+    color: #fff;
+}
+
+.about-intro .actions button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.about-intro .right-content .img {
+    position: absolute;
+    height: 650px;
+    width: 740px;
+    bottom: 0px;
+    right: 16.6%;
+    border: 2px solid #000;
+    border-bottom: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* About One Section  */
+.about-container {
+    margin: 30px 14%;
+    height: 600px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.about-container .left-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 30px;
+}
+
+.about-container .left-content header {
+    font-size: 42px;
+}
+
+.about-container .left-content p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about-container .left-content .bullets {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .left-content .bullets .content {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-container .left-content .bullets .content .icon {
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    border-radius: 100%;
+}
+
+.about-container .left-content .bullets .content h4 {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-container .left-content .actions {
+    margin-top: 20px;
+}
+
+.about-container .left-content .actions button {
+    padding: 12px 32px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #000;
+    transition: all 0.3s ease 0s;
+}
+
+.about-container .left-content .actions button:hover {
+    background-color: #d9d9d9;
+}
+
+.about-container .left-content .actions button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.about-container .right-content {
+    width: 50%;
+    height: 100%;
+    border-left: 2px solid #000;
+}
+
+/* About Two Section  */
+.about-container.second {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.about-container.second header {
+    font-size: 72px;
+    line-height: 96px;
+}
+
+.about-container.second p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.about-container.second .row {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-container.second .row .content{
+    flex: 33%;
+    height: 180px;
+    margin-right: 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+.about-container.second .row:last-child {
+    margin-right: 0;
+}
+
+/* About Artists Section  */
+.about-artists {
+    margin: 30px 16.6%;
+}
+
+.about-artists header {
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-artists .redirect {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-artists .redirect p {
+    font-size: 20px;   
+    color: #737373;
+    font-weight: 400;
+}
+
+.about-artists .redirect a {
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.about-artists .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-artists .row .content-col {
+    position: relative;
+    flex: 25%;
+    margin: 10px;
+    border: 2px solid #000;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.about-artists .row .content-col:hover {
+    background-color: #d9d9d9;
+}
+
+.about-artists .row .content-col h4 {
+    position: absolute;
+    bottom: 0px;
+    margin: 10px 0;
+    font-size: 18px;
     font-weight: 500;
 }
