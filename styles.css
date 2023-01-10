@@ -1756,3 +1756,172 @@ svg {
     font-size: 16px;
 }
 
+/* View Artist Details */
+.artist {
+    margin: 0 16%;
+    display: flex;
+    flex-direction: row;
+}
+
+.artist article {
+    width: 70%;
+}
+
+.artist aside {
+    width: 30%;
+}
+
+.artist article .artwork-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist article .artwork-view .user-details {
+    margin: 0 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.artist article .artwork-view .user-details .img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #000;
+}
+
+.artist article .artwork-view .user-details .info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.artist article .artwork-view .user-details .info h4 {
+    margin-left: 15px;
+    font-weight: 400;
+    color: #737373;
+}
+
+.artist article .artwork-view .user-details .rating {
+    display: flex;
+    flex-direction: row;
+}
+.artist article .artwork-view .user-details .rating h4 {
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.artist article .artwork-view .user-details .rating h4:last-child {
+    margin-left: 10px;
+}
+
+.artist article .artwork-view .user-details .rating .stars {
+    margin-left: 10px;
+}
+
+.artist article .artwork-view .art-content {
+    position: relative;
+    width: 95%;
+    margin: 10px 8px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.artist article .artwork-view .art-content .actions  {
+    padding: 0 40px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+}
+
+.artist article .artwork-view .art-content .actions .btn-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist article .artwork-view .art-content .actions .btn-center button {
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+}
+
+.artist article .artwork-view .art-content .actions .btn-center button i  {
+    font-size: 2.25rem;
+}
+
+.artist article .artwork-view .row {
+    width: 96.6%;
+    display: flex;
+    flex-direction: row;
+}
+
+.artist article .artwork-view .row .content-col {
+    flex: 14.2%;
+    height: 75px;
+    margin: 5.6px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.artist article .artwork-view .row .content-col:hover {
+    background-color: #d9d9d9;
+}
+
+.artist article .comment {
+    margin: 30px 8px;
+}
+
+.artist article .comment .sign-in {
+    width: 96.6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 15px 10px;
+    border: 2px solid #000;
+}
+
+.artist article .comment .sign-in header {
+    font-size: 1.25rem;
+}
+
+.artist article .comment .sign-in .actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.artist article .comment .sign-in .actions button {
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 12px;
+    transition: all 0.3s ease 0s;
+}
+
+.artist article .comment .sign-in .actions button:hover {
+    background-color: #aaaaaa;
+}
+
+.artist article .comment .sign-in .actions button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.artist article .comment .sign-in .actions button:last-child {
+    background-color: #000;
+}
+
+.artist article .comment .sign-in .actions button:last-child:hover {
+    background-color: #AAAAAA;
+}
+
+.artist article .comment .sign-in .actions button:last-child a {
+    color: #fff;
+}
+
+.artist article .comment .sign-in .actions button:last-child:hover a {
+    color: #fff;
+}
