@@ -399,11 +399,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex: 33%;
     margin: 0 10px;
     height: 350px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .design-one .row .content-col .img {
@@ -412,7 +413,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: #D9D9D9;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .design-one .row .content-col .actions {
@@ -531,7 +532,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex: 33%;
     margin: 0 10px;
     height: 350px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -972,48 +973,52 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* Contact Content Section  */
 .contact-intro { 
-    height: 500px;
+    padding: 40px 0 80px 0;
     width: 100%;
     border-bottom: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-intro header {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.contact-intro p {
+    font-size: 1.5rem;
 }
 
 /* Contact Banner Section  */
 .contact-banner {
+    margin: 50px 18% 0;
     height: 180px;
-    border-bottom: 2px solid #000;
 }
 
 .contact-banner .row {
     width: 100%;
-    display: flex;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-direction: row;
 }
 
 .contact-banner .row .contact-col {
     height: 180px;
+    margin: 10px;
+    padding: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    border: 2px solid #000;
+    border-radius: 5px;
 }
 
 .contact-banner .row .contact-col i {
     font-size: 82px;
     margin-right: 30px;
-}
-
-
-.contact-banner .row .contact-col.mobile {
-    flex: 1 1 auto;
-    border-right: 2px solid #000;
-}
-
-.contact-banner .row .contact-col.email {
-    flex: 2 2 auto;
-    border-right: 2px solid #000;
-}
-
-.contact-banner .row .contact-col.phone {
-    flex: 2 2 auto;
 }
 
 .contact-banner .row .contact-col .details {
@@ -1024,32 +1029,41 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .contact-banner .row .contact-col .details header {
     font-size: 1.875rem;
+    font-weight: 500;
 }
 
 .contact-banner .row .contact-col .details p {
-    font-size: 1.375rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /* Contact Form Section  */
 .contact-form {
-    width: 100%;
+    margin: 300px 17% 0 ;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.contact-form .img {
+    height: 300px;
+    border-bottom: 2px solid #000;
 }
 
 .contact-form .wrapper {
-    width: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 50px 80px;
+    padding: 40px;
 }
 
 .contact-form .wrapper header {
-    font-size: 2rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 }
 
 .contact-form .wrapper p {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.5rem;;
+    font-weight: 400;
 }
 
 .contact-form .wrapper form {
@@ -1086,7 +1100,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 100%;
     font-size: 16px;
     padding: 30px 20px 30px 10px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     border-radius: 3px;
 }
 
@@ -1105,6 +1119,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .contact-form .wrapper form .input.message textarea {
     padding: 10px;
     height: 300px;
+    border: 2px solid #000;
     resize: none;
 }
 
@@ -1117,6 +1132,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .contact-form .wrapper form .action button {
     padding: 10px 80px;
     background-color: #000;
+    border-radius: 12px;
     font-size: 16px;
     color: #fff;
     transition: all 0.3s ease 0s;
@@ -1129,15 +1145,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* FAQs Intro Section  */
 .faqs-intro {
-    margin: 30px 0;
+    padding: 40px 0 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-bottom: 2px solid #000;
 }
 
 .faqs-intro header {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -1207,6 +1224,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .faq-container header {
     font-size: 2rem;
     margin: 32px 0px;
+    font-weight: 500;
 }
   
 .faq {
@@ -1267,7 +1285,7 @@ svg {
 
 /* Breadcrumbs Section */
 .breadcrumbs {
-    margin: 20px 16.5%;
+    margin: 20px 16.4%;
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -1592,5 +1610,149 @@ svg {
 .view-art-style.art-posts .details .action button h4 {
     font-weight: 500;
     font-size: 1rem;
+}
+
+/* View Artists Section  */
+.view-artists {
+    margin: 0 16%;
+}
+
+.view-artists .details {
+    position: relative;
+    margin: 0 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-artists .details .art-type-intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-artists .details .art-type-intro header {
+    font-size: 1.5rem;
+}
+
+.view-artists .details .art-type-intro p {
+    font-size: 1.25rem;
+}
+
+.view-artists .actions {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.view-artists .actions button {
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.view-artists .actions button:hover {
+    background-color: #d9d9d9;
+}
+
+.view-artists .actions button i {
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+.view-artists .actions button h4 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.view-artists .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.view-artists .row .content-col {
+    position: relative;
+    margin: 15px 8px 10px 0;
+    height: 350px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-artists .row .content-col .price {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 15px;
+}
+
+.view-artists .row .content-col .price h4{
+    font-weight: 400;
+}
+
+.view-artists .row .content-col .user-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.view-artists .row .content-col .user-details .img {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #000
+}
+
+.view-artists .row .content-col .user-details header {
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.view-artists .row .content-col .user-details p {
+    font-weight: 400;
+    margin: -5px 0 0px 0;
+}
+
+.view-artists .row .content-col .user-details .rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-artists .row .content-col .user-details .rating i {
+    font-size: 1.125rem;
+}
+
+.view-artists .row .content-col .user-details .rating h4 {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.view-artists .row .content-col .user-details button {
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 9px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+}
+
+.view-artists .row .content-col .user-details button:hover {
+    background-color: #d9d9d9;
+}
+
+.view-artists .row .content-col .user-details button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
 }
 
