@@ -1839,7 +1839,7 @@ svg {
 }
 
 .artist article .artwork-view .art-content .actions .btn-center button {
-    background-color: #d9d9d9;
+    background-color: #fff;
     border: none;
     outline: none;
 }
@@ -1869,7 +1869,7 @@ svg {
 }
 
 .artist article .comment {
-    margin: 30px 8px;
+    margin: 30px 5px;
 }
 
 .artist article .comment .sign-in {
@@ -1880,6 +1880,7 @@ svg {
     align-items: center;
     border-radius: 12px;
     padding: 15px 10px;
+    margin: 30px 0px;
     border: 2px solid #000;
 }
 
@@ -1924,4 +1925,281 @@ svg {
 
 .artist article .comment .sign-in .actions button:last-child:hover a {
     color: #fff;
+}
+
+.artist article .comment .reviews {
+    width: 96.6%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist article .comment .reviews header {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.artist article .comment .reviews .column {
+    margin: 10px 0;
+}
+
+.artist article .comment .reviews .column .review-item {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist article .comment .reviews .column .review-item .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.artist article .comment .reviews .column .review-item .rating .stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.artist article .comment .reviews .column .review-item .rating .stars i {
+    font-size: 1.75rem;
+    margin: 0 2px;
+}
+
+.artist article .comment .reviews .column .review-item .rating .stars i:first-child {
+    margin-left: 0px;
+}
+
+.artist article .comment .reviews .column .review-item .rating h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 5px 0 0 5px;
+}
+
+.artist article .comment .reviews .column .review-item .description {
+    margin: 5px 0;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.artist article .comment .reviews .column .review-item .description p {
+    font-weight: 400;
+}
+
+.artist article .comment .reviews .column .review-item .user-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.artist article .comment .reviews .column .review-item .user-details .img {
+    height: 55px;
+    width: 55px;
+    border: 2px solid #000;
+}
+
+.artist article .comment .reviews .column .review-item .user-details .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.artist article .comment .reviews .column .review-item .user-details .details header {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.artist article .comment .reviews .column .review-item .user-details .details h4 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.artist aside {
+    margin: 0;
+}
+
+.artist aside .about-artwork {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist aside .details {
+    margin: 0 5px;
+}
+
+.artist aside .about-artwork header {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.artist aside .about-artwork p {
+    font-size: 1.125rem;
+    text-align: justify;
+}
+
+.artist aside .about-artwork .price {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+.artist aside .about-artwork .price h2 {
+    margin-top: 30px;
+    font-size: 2.125rem;
+    font-weight: 500;
+}
+
+.artist aside .about-artwork .price h5 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.artist aside .about-artwork .action {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.artist aside .about-artwork .action button {
+    background-color: #fff;
+    width: 50%;
+    margin: 0 5px;
+    padding: 12px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.artist aside .about-artwork .action button:hover {
+    background-color: #d9d9d9;
+}
+
+.artist aside .about-artwork .action button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.artist aside .about-artwork .action button:last-child {
+    background-color: #000;
+}
+
+.artist aside .about-artwork .action button:last-child a {
+    color: #fff;
+}
+
+.artist aside .about-artwork .action button:last-child:hover {
+    background-color: #d9d9d9
+}
+
+.artist aside .about-artwork .action button:last-child:hover a {
+    color: #000;
+}
+
+.artist aside .about-seller {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist aside .about-seller .header-details {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.artist aside .about-seller .header-details header {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.artist aside .about-seller .user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist aside .about-seller .user-details .top {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.artist aside .about-seller .user-details .top .img {
+    width: 75px;
+    height: 65px;
+    border: 2px solid #000;
+}
+
+.artist aside .about-seller .user-details .top .details {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist aside .about-seller .user-details .top .details header {
+    font-size: 1rem;
+}
+
+.artist aside .about-seller .user-details .top .details .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.artist aside .about-seller .user-details .top .details .rating h4 {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.artist aside .about-seller .user-details .top .details .rating .stars {
+    margin: 0 5px;
+}
+
+.artist aside .about-seller .user-details .seller-details {
+    margin: 5px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.artist aside .about-seller .user-details .seller-details .content {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.artist aside .about-seller .user-details .seller-details .content h4 {
+    font-weight: 500;
+}
+
+.artist aside .about-seller .user-details .seller-details .content h4:last-child {
+    color: #737373;
+}
+
+.artist aside .about-seller .user-details .description {
+    margin: 5px;
+}
+
+.artist aside .further-details {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 5px;
+}
+
+.artist aside .further-details .header-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.artist aside .further-details .header-details header {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.artist aside .further-details .description {
+    margin: 20px 0;
+    text-align: justify;
 }
