@@ -2401,3 +2401,108 @@ svg {
 .commission-details .wrapper .bottom  form .actions button:hover {
     background-color: #d9d9d9;
 }
+
+.contact-artist {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-artist .wrapper {
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #737373;
+    border-radius: 5px;
+}
+
+.contact-artist .wrapper form {
+    padding: 0;
+    height: 100%;
+}
+
+.contact-artist .wrapper form .header-details {
+    height: 18%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #737373;
+}
+
+.contact-artist .wrapper form .header-details .img {
+    height: 55px;
+    width: 55px;
+    border: 1px solid #737373;
+}
+
+.contact-artist .wrapper form .header-details .user-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.contact-artist .wrapper form .header-details .user-details header {
+    font-size: 1rem;
+}
+
+.contact-artist .wrapper form .header-details .user-details .status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-artist .wrapper form .header-details .user-details .status h4 {
+    font-weight: 600;
+}
+
+.contact-artist .wrapper form .header-details .user-details .status i {
+    margin-left: 5px;
+    font-size: 0.65rem;
+}
+
+.contact-artist .wrapper form .header-details .user-details .status p {
+    margin-left: 5px;
+    color: #737373;
+}
+
+.contact-artist .wrapper form .header-details .user-details .action {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.contact-artist .wrapper form .header-details .user-details .action i {
+    font-size: 1.25rem;
+}
+
+.contact-artist .wrapper form .message-container {
+    padding: 25px 25px;
+    height: 67%;
+    text-align: justify;
+}
+
+.contact-artist .wrapper form .send {
+    border-top: 1px solid #737373;
+    padding: 10px;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-artist .wrapper form .send input {
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #737373;
+    border-radius: 5px;
+}
+
+.contact-artist .wrapper form .send i {
+    margin-left: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
