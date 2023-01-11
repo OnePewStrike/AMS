@@ -2402,7 +2402,9 @@ svg {
     background-color: #d9d9d9;
 }
 
+/* Contact Artist Section  */
 .contact-artist {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -2505,4 +2507,120 @@ svg {
     margin-left: 12px;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* Dashboard Navigation Section */
+.dashboard-header {
+    padding: 10px 2%;
+    margin: 10px 0;
+    border-bottom: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header .admin-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dashboard-header .admin-header h1{ 
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.dashboard-header .admin-header .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.dashboard-header .admin-header .search-container form {
+    margin: 4px 0px 4px 40px;
+    width: 90%;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+  
+.dashboard-header .admin-header .search-container form input {
+    width: 90%;
+    border: none;
+    outline: none;
+    color: #000;
+    margin-left: 10px;
+    font-size: 1.125rem;
+}
+  
+.dashboard-header .admin-header .search-container form input::placeholder {
+    color: #000;
+}
+  
+.dashboard-header .admin-header .search-container form button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+  
+.dashboard-header .admin-header .search-container form button .fa-magnifying-glass {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    transform: translateY(-25%);
+    transition: all 0.3s ease 0s;
+}
+  
+.dashboard-header .admin-header .search-container form button i:hover {
+    transform: scale(1.1);
+}
+
+.dashboard-header .admin-header .user-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dashboard-header .admin-header .user-icon i {
+    font-size: 1.5rem;
+}
+
+.dashboard-header .admin-header .user-icon i:last-child {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.dashboard-header .admin-sub-header {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dashboard-header .admin-sub-header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-header .admin-sub-header nav ul li {
+    list-style: none;
+}
+
+.dashboard-header .admin-sub-header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.125rem;
+}
+
+.dashboard-header .admin-sub-header nav ul li a::after {
+    position: absolute;
+    height: 4px;
+    bottom: -4px;
+    content: '';
 }
