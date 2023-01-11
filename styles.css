@@ -2203,3 +2203,201 @@ svg {
     margin: 20px 0;
     text-align: justify;
 }
+
+/* Commission Details  */
+.commission-details {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 22%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.blur-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+.commission-details .wrapper .header-details  {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.commission-details .wrapper .header-details header {
+    font-size: 1.375rem;
+}
+
+.commission-details .wrapper .header-details #btnCommission {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.commission-details .wrapper .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.commission-details .wrapper .bottom  form {
+    padding: 20px 30px;
+}
+
+.commission-details .wrapper .bottom  form .design-choice {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.commission-details .wrapper .bottom  form .design-choice input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 15px 12px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.commission-details .wrapper .bottom  form .design-choice i {
+    position: absolute;
+    right: 0px;
+    transform: translateX(-100%);
+}
+
+.commission-details .wrapper .bottom  form .description {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.commission-details .wrapper .bottom  form .price {
+    margin: 5px 0;
+    font-size: 1.25rem;
+}
+
+.commission-details .wrapper .bottom  form .price h2{
+    font-weight: 500;
+}
+
+.commission-details .wrapper .bottom  form .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.commission-details .wrapper .bottom  form .row .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.commission-details .wrapper .bottom  form .row .content i {
+    font-size: 1.375rem;
+}
+
+.commission-details .wrapper .bottom  form .row .content h4 {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.commission-details .wrapper .bottom  form .design-details {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.commission-details .wrapper .bottom  form .design-details .details {
+    font-size: 1rem;
+}
+
+.commission-details .wrapper .bottom  form .design-details .details header {
+    font-weight: 700;
+}
+
+.commission-details .wrapper .bottom  form .design-details .details p {
+    text-align: justify;
+}
+
+.commission-details .wrapper .bottom  form .design-details .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.commission-details .wrapper .bottom  form .design-details .column .content {
+    display: flex;
+    flex: row;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.commission-details .wrapper .bottom  form .design-details .column .content i {
+    font-size: 1.25rem;
+    color: #737373;
+}
+.commission-details .wrapper .bottom  form .design-details .column .content h4 {
+    font-weight: 500;
+    margin-left: 10px;
+    color: #737373;
+}
+
+.commission-details .wrapper .bottom  form .further-details {
+    font-size: 1rem;
+}
+
+.commission-details .wrapper .bottom  form .further-details header {
+    font-weight: 700;
+}
+
+.commission-details .wrapper .bottom  form .further-details p {
+    text-align: justify;
+}
+
+.commission-details .wrapper .bottom  form .further-details textarea {
+    resize: none;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 250px;
+    padding: 10px;
+    border: 1px;
+    text-align: justify;
+}
+
+.commission-details .wrapper .bottom  form .further-details textarea::placeholder {
+    font-size: 1rem;
+}
+
+.commission-details .wrapper .bottom  form .actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commission-details .wrapper .bottom  form .actions button {
+    width: 100%;
+    padding: 15px 12px;
+    font-size: 1.125rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.commission-details .wrapper .bottom  form .actions button:hover {
+    background-color: #d9d9d9;
+}
