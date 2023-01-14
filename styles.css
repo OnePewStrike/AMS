@@ -697,13 +697,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .footer-short {
-    margin: 30px 0 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#ccc;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    height: 100%;
     background-color: #000;
 }
 
@@ -2741,7 +2744,7 @@ svg {
 .overview .double-content .left-content {
     width: 70%;
     border-radius: 5px;
-    height: 450px;
+    height: 390px;
     border: 1px solid #000;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -2755,7 +2758,7 @@ svg {
 .overview .double-content .right-content {
     width: 30%;
     border-radius: 5px;
-    height: 450px;
+    height: 390px;
     border: 1px solid #000;
     margin-left: 15px;
     cursor: pointer;
@@ -2787,6 +2790,10 @@ svg {
     border: 1px solid #000;
     height: 760px;
     border-radius: 5px;
+}
+
+.view-form .container.short {
+    height: 460px;
 }
 
 .view-form .container .header-details {
@@ -2926,5 +2933,15 @@ svg {
 .view-form .container .content form .action button:hover {
     background-color: #d9d9d9;
     color: #000;
+}
+
+.view-form .container .content form .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.view-form .container .content form .checkbox-container .checkbox {
+    margin-right: 5px;
 }
 

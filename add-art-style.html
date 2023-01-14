@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Art Styles</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Dashboard Navigation Section  -->
+    <section class="dashboard-header">
+        <div class="admin-header">
+            <h1>Dashboard</h1>
+            <div class="search-container">
+                <form>
+                    <input type="search" name="search" placeholder="Search of anything...">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <div class="admin-sub-header">
+            <nav>
+                <ul>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                    <li><a href="">Selector</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- View Form Section  -->
+    <section class="view-form">
+        <div class="container short">
+            <div class="header-details">
+                <header>Add Art Style</header>
+                <button><a href="">Back</a></button>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="fields type-one">
+                        <div class="field input">
+                            <label for="name">Art Style Name</label>
+                            <input id="name" type="text" class="form-control"
+                            name="name" required requiredautocomplete="name">
+                        </div>
+                        <div class="field img large">
+                            <label> Image </label>
+                            <input type="file" name="image" class="custom-file-upload">
+                        </div>
+                    </div>
+                    <div class="fields type-one">
+                        <div class="field input">
+                            <label for="created_by">Created By</label>
+                            <input id="created_by" type="text" class="form-control"
+                            name="created_by" required requiredautocomplete="created_by">
+                        </div>
+                        <div class="field input">
+                            <label for="created_at">Created At</label>
+                            <input id="created_at" type="text" class="form-control"
+                            name="created_at" required requiredautocomplete="created_at">
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button>Add Art Style</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-short">
+        <div class="left-content">
+            <i class="fa-regular fa-copyright"></i>
+            <h4>Title 2022 | All Rights Reserved | Version</h4>
+        </div>
+        <div class="right-content">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </section>
+</body>
+</html>
