@@ -2783,6 +2783,7 @@ svg {
 }
 
 .view-form .container {
+    width: 100%;
     border: 1px solid #000;
     height: 760px;
     border-radius: 5px;
@@ -2806,7 +2807,7 @@ svg {
 .view-form .container .header-details button {
     background-color: #000;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 10px 40px;
     transition: all 0.3s ease 0s;
 }
 
@@ -2821,6 +2822,109 @@ svg {
 }
 
 .view-form .container .header-details button:hover a {
+    color: #000;
+}
+
+.view-form .container .content {
+    padding: 20px 15px;
+}
+
+.view-form .container .content form {
+    width: 100%;
+    position: relative;
+}
+
+.view-form .container .content form .fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.view-form .container .content form .fields .field {
+    position: relative;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 10px;
+}
+
+.view-form .container .content form .fields.type-one .field {
+    flex: 31%;
+}
+
+.view-form .container .content form .fields.type-two .field.img.large {
+    width: 50%;
+}
+
+.view-form .container .content form .fields.type-two .field.input.small {
+    flex: 0 0 29%;
+}
+
+.view-form .container .content form .fields .field .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-form .container .content form .fields .field .details i {
+    position: absolute;
+    right: 20px;
+    bottom: 22px;
+}
+
+.view-form .container .content form .field label {
+    margin-bottom: 4px;
+    font-size: 1.25rem;
+}
+
+.view-form .container .content form .field input {
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    border: 1px solid #000;
+    border-radius: 2px;
+} 
+
+.view-form .container .content form .field .selector i {
+    position: absolute;
+}
+
+.view-form .container .content form .input.description {
+    margin: 0 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-form .container .content form .input.description label {
+    margin-bottom: 4px;
+    font-size: 1.25rem;
+}
+
+.view-form .container .content form .input.description textarea {
+    padding: 10px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.25rem;
+    resize: none;
+}
+
+.view-form .container .content form .action {
+    display: flex;
+    justify-content: right;
+}
+
+.view-form .container .content form .action button {
+    margin: 30px 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    background-color: #000;
+    padding: 12px 30px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.view-form .container .content form .action button:hover {
+    background-color: #d9d9d9;
     color: #000;
 }
 
