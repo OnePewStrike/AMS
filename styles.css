@@ -696,6 +696,43 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #fff;
 }
 
+.footer-short {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    height: 100%;
+    background-color: #000;
+}
+
+.footer-short .left-content {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-short .left-content i {
+    font-size: 0.75rem;
+}
+
+.footer-short .left-content h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.footer-short .right-content {
+    color: #fff;
+}
+
+.footer-short .right-content i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
 /* About Intro Section  */
 .about-intro {
     position: relative;
@@ -2650,7 +2687,7 @@ svg {
     border-radius: 5px;
     cursor: pointer;
     padding: 20px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000;
     transition: all 0.3s ease 0s;
 }
 
@@ -2696,7 +2733,6 @@ svg {
 }
 
 .overview .double-content {
-    width: 100%;
     margin: 20px 5px;
     display: flex;
     flex-direction: row;
@@ -2704,8 +2740,9 @@ svg {
 
 .overview .double-content .left-content {
     width: 70%;
+    border-radius: 5px;
     height: 450px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
@@ -2717,8 +2754,9 @@ svg {
 
 .overview .double-content .right-content {
     width: 30%;
+    border-radius: 5px;
     height: 450px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000;
     margin-left: 15px;
     cursor: pointer;
 }
@@ -2729,11 +2767,60 @@ svg {
 
 .overview .bottom-content {
     height: 180px;
-    width: 100%;
-    border: 1px solid #d9d9d9;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
     cursor: pointer;
 }
 
 .overview .bottom-content:hover {
     border: 1px solid #000;
 }
+
+/* View Artworks Section */
+.view-form {
+    margin: 0 2%;
+}
+
+.view-form .container {
+    border: 1px solid #000;
+    height: 760px;
+    border-radius: 5px;
+}
+
+.view-form .container .header-details {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #000;
+}
+
+
+.view-form .container .header-details header {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.view-form .container .header-details button {
+    background-color: #000;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: all 0.3s ease 0s;
+}
+
+.view-form .container .header-details button:hover {
+    background-color: #d9d9d9;
+}
+
+.view-form .container .header-details button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.view-form .container .header-details button:hover a {
+    color: #000;
+}
+
